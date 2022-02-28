@@ -111,3 +111,16 @@
   font-size: 45px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
+#counter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100px;
+  font-size: 30px;
+}
+
+#contacts-image {
+  height: 30px;
+  border-radius: 50%;
+}
