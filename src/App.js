@@ -1,7 +1,7 @@
 import './App.css';
 import Contactslist from './components/Contactslist';
 import Sidebar from './components/Sidebar';
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect} from 'react'
 
 /* 
 
@@ -22,7 +22,6 @@ function App() {
 
   const [list, setList] = useState(contactList);
   // console.log(list[0].contactName)
-  // const [image, setImage] = useState("https://e7.pngegg.com/pngimages/889/832/png-clipart-google-contacts-mobile-app-contact-manager-app-store-android-application-package-email-miscellaneous-blue.png");
 
 
   useEffect(()=> {
@@ -31,17 +30,11 @@ function App() {
     .then(json => setList(json))
   },[])
 
-  // useEffect(()=> {
-  //   fetch('https://jsonplaceholder.typicode.com/photos')
-  //   .then(response => response.json())
-  //   .then(json => setImage(json))
-  // },[])
-
 
   return (
     <div className="App">
       <Sidebar />
-      <Contactslist list={list} /*image={image}*//>
+      <Contactslist list={list}/>
     </div>
   );
 }
